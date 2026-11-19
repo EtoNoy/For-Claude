@@ -1,4 +1,4 @@
-import { icon, logoMark } from './icons.mjs';
+import { icon, wordmark } from './icons.mjs';
 
 export const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -18,7 +18,47 @@ export const btn = (href, text, cls = 'btn btn-primary', arrow = 'arrow-up-right
 const areaUrl = (slug) => `/expertise/${slug}/`;
 
 export function logo(site, cls = '') {
-  return `<a class="logo${cls ? ' ' + cls : ''}" href="/" aria-label="${esc(site.name)} home">${logoMark()}<span class="logo-word">FRONTLINE<span>LAWYERS</span></span></a>`;
+  return `<a class="logo${cls ? ' ' + cls : ''}" href="/" aria-label="${esc(site.name)} home">${wordmark()}</a>`;
+}
+
+const YEARS = ['2023', '2024', '2025', '2026'];
+export function doylesBadges(cls = '', withYears = false) {
+  return `<span class="badges${cls ? ' ' + cls : ''}">${YEARS.map((y) => `<span class="badge"><img src="/assets/images/doyles-${y}.webp" alt="Doyle’s Guide recommended ${y}" width="169" height="160" loading="lazy" decoding="async">${withYears ? `<span class="badge-year">${y}</span>` : ''}</span>`).join('')}</span>`;
+}
+
+export function ticker(ctx) {
+  const { site } = ctx;
+  const places = [...site.locations.nsw.places, ...site.locations.qld.places];
+  const row = places.map((p) => `<li>${esc(p)}</li>`).join('');
+  return `
+<section class="ticker" aria-label="Where we represent clients">
+  <p class="sr-only">Representing clients in ${esc(places.join(', '))}.</p>
+  <div class="ticker-track" aria-hidden="true"><ul>${row}</ul><ul>${row}</ul></div>
+</section>`;
+}
+
+export function reviews(ctx) {
+  const { site } = ctx;
+  if (!site.showReviews) return '';
+  const stars = `<span class="stars" aria-label="5 out of 5">${'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9Z"/></svg>'.repeat(5)}</span>`;
+  return `
+<section class="section reviews" data-reviews>
+  <div class="container">
+    <div class="section-head split-head split-head-end">
+      <div>
+        ${eyebrow('In their words')}
+        <h2 class="h2">Clear advice.<br><em>Kept in the loop.</em></h2>
+      </div>
+      <div class="reviews-nav">
+        <button type="button" class="round-btn" data-reviews-prev aria-label="Previous review">${icon('arrow-right', 'flip')}</button>
+        <button type="button" class="round-btn" data-reviews-next aria-label="Next review">${icon('arrow-right')}</button>
+      </div>
+    </div>
+    <ul class="reviews-track" data-reviews-track>
+      ${site.reviews.map((r) => `<li class="review"><figure>${stars}<blockquote><p>${esc(r)}</p></blockquote><figcaption class="caps">Client review · shared anonymously</figcaption></figure></li>`).join('')}
+    </ul>
+  </div>
+</section>`;
 }
 
 export function header(ctx) {
@@ -27,6 +67,7 @@ export function header(ctx) {
   const inExpertise = path.startsWith('/expertise/');
   const featured = site.featured.map((s) => areas.find((a) => a.slug === s));
   const [r1, r2] = site.region.split(' / ');
+  const overlay = path === '/';
   return `
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="topbar">
@@ -35,7 +76,7 @@ export function header(ctx) {
     <a class="topbar-call" href="${site.phoneHref}">Arrested or facing court? <strong>${esc(site.phone)}</strong>${icon('arrow-up-right')}</a>
   </div>
 </div>
-<header class="site-header" data-header>
+<header class="site-header${overlay ? ' is-overlay' : ''}" data-header>
   <div class="container header-inner">
     ${logo(site)}
     <nav class="main-nav" aria-label="Main navigation">
@@ -106,6 +147,7 @@ export function footer(ctx) {
       <span class="footer-legal"><a href="/privacy/">Privacy</a><a href="/legal/">Legal information</a></span>
     </div>
     <p class="footer-disclaimer">${esc(site.disclaimer)}</p>
+    <div class="footer-mark" aria-hidden="true">${wordmark('', true)}</div>
   </div>
 </footer>
 <a class="mobile-call" href="${site.phoneHref}">${icon('phone')}<span>Speak directly with Adam</span><strong>${esc(site.phone)}</strong>${icon('arrow-up-right')}</a>`;
@@ -135,7 +177,7 @@ export function credentials(ctx) {
   return `
 <section class="creds" aria-label="Our credentials">
   <div class="container creds-inner">
-    <a class="cred cred-doyles" href="${site.doylesUrl}" target="_blank" rel="noopener">${icon('laurel', 'cred-ico')}<span><span class="cred-doyles-name">Doyle’s Guide</span><span class="cred-sub caps">Recommended 2023–2026</span></span></a>
+    <a class="cred cred-doyles" href="${site.doylesUrl}" target="_blank" rel="noopener">${doylesBadges('badges-stack')}<span><span class="cred-doyles-name">Doyle’s Guide</span><span class="cred-sub caps">Recommended 2023–2026</span></span></a>
     <div class="cred">${icon('shield-check', 'cred-ico')}<span><span class="cred-title">Criminal defence</span><span class="cred-sub">A focused practice</span></span></div>
     <div class="cred">${icon('compass', 'cred-ico')}<span><span class="cred-title">NSW &amp; Queensland</span><span class="cred-sub">Local knowledge. Wider reach.</span></span></div>
     <div class="cred">${icon('user', 'cred-ico')}<span><span class="cred-title">Personal representation</span><span class="cred-sub">Your lawyer, from day one</span></span></div>
@@ -161,7 +203,7 @@ export function accordion(items, { cls = '' } = {}) {
       const attrs = it.category ? ` data-category="${it.category}"` : '';
       return `
   <div class="acc-item"${attrs}>
-    <h3 class="acc-h"><button type="button" class="acc-btn" aria-expanded="false" aria-controls="${id}">${esc(it.q)}${icon('plus')}</button></h3>
+    <h3 class="acc-h"><button type="button" class="acc-btn" aria-expanded="false" aria-controls="${id}"><span>${it.tag ? `<span class="acc-tag">${esc(it.tag)}</span>` : ''}${esc(it.q)}</span>${icon('plus')}</button></h3>
     <div class="acc-panel" id="${id}" role="region" hidden><p>${esc(it.a)}</p></div>
   </div>`;
     })

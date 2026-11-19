@@ -5,7 +5,10 @@
   "phone": "0421 066 608",
   "phoneHref": "tel:+61421066608",
   "email": "adam@frontlinelaw.com.au",
-  "postal": ["PO Box 104", "Murwillumbah NSW 2484"],
+  "postal": [
+    "PO Box 104",
+    "Murwillumbah NSW 2484"
+  ],
   "region": "Northern Rivers NSW / South East Queensland",
   "doylesUrl": "https://doylesguide.com/people/au/adam-ashley/",
   "lawyer": {
@@ -21,34 +24,152 @@
     "court-hearings-trials"
   ],
   "footerExpertise": [
-    ["Criminal defence", "assault-charges"],
-    ["Driving & traffic", "drink-driving-dui"],
-    ["Bail applications", "bail-applications"],
-    ["Hearings & trials", "court-hearings-trials"]
+    [
+      "Criminal defence",
+      "assault-charges"
+    ],
+    [
+      "Driving & traffic",
+      "drink-driving-dui"
+    ],
+    [
+      "Bail applications",
+      "bail-applications"
+    ],
+    [
+      "Hearings & trials",
+      "court-hearings-trials"
+    ]
   ],
   "categories": [
-    ["criminal", "Criminal defence"],
-    ["driving", "Driving & traffic"],
-    ["court", "Court & appeals"]
+    [
+      "criminal",
+      "Criminal defence"
+    ],
+    [
+      "driving",
+      "Driving & traffic"
+    ],
+    [
+      "court",
+      "Court & appeals"
+    ]
   ],
   "questionCategories": [
-    ["start", "Getting started"],
-    ["together", "Working together"],
-    ["locations", "Locations"]
+    [
+      "start",
+      "Getting started"
+    ],
+    [
+      "together",
+      "Working together"
+    ],
+    [
+      "locations",
+      "Locations"
+    ]
   ],
   "locations": {
     "nsw": {
       "label": "Northern Rivers NSW",
-      "places": ["Murwillumbah", "Tweed Heads", "Byron Bay", "Ballina", "Lismore", "Mullumbimby", "Casino", "Maclean"]
+      "places": [
+        "Murwillumbah",
+        "Tweed Heads",
+        "Kingscliff",
+        "Pottsville",
+        "Byron Bay",
+        "Mullumbimby",
+        "Ocean Shores",
+        "Ballina",
+        "Lismore",
+        "Casino",
+        "Kyogle",
+        "Maclean"
+      ]
     },
     "qld": {
       "label": "South East Queensland",
-      "places": ["Coolangatta", "Southport", "Brisbane", "Beenleigh", "Robina", "Burleigh Heads", "Surfers Paradise", "Broadbeach"]
+      "places": [
+        "Coolangatta",
+        "Southport",
+        "Brisbane",
+        "Beenleigh",
+        "Robina",
+        "Burleigh Heads",
+        "Surfers Paradise",
+        "Broadbeach"
+      ]
     }
   },
   "costsFaq": {
     "q": "How do I find out about legal fees?",
     "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
   },
-  "disclaimer": "General information, not legal advice. An enquiry does not create a lawyer–client relationship. Liability limited by a scheme approved under Professional Standards Legislation. Landscape and architectural imagery is illustrative."
+  "disclaimer": "General information, not legal advice. An enquiry does not create a lawyer–client relationship. Liability limited by a scheme approved under Professional Standards Legislation. Landscape and architectural imagery is illustrative.",
+  "admission": "Admitted to the Supreme Courts of NSW and Queensland",
+  "guideCategories": [
+    [
+      "police",
+      "Police & arrest"
+    ],
+    [
+      "driving",
+      "Drink & drug driving"
+    ],
+    [
+      "bail",
+      "Bail"
+    ],
+    [
+      "assault",
+      "Assault"
+    ],
+    [
+      "dv",
+      "Domestic violence & AVOs"
+    ],
+    [
+      "drugs",
+      "Drug charges"
+    ],
+    [
+      "weapons",
+      "Firearms & weapons"
+    ],
+    [
+      "fraud",
+      "Fraud & financial"
+    ],
+    [
+      "court",
+      "Court & sentencing"
+    ]
+  ],
+  "areaGuide": {
+    "police-matters": "police",
+    "drink-driving-dui": "driving",
+    "traffic-offences": "driving",
+    "licence-suspensions-appeals": "driving",
+    "bail-applications": "bail",
+    "assault-charges": "assault",
+    "public-nuisance": "assault",
+    "murder-manslaughter": "court",
+    "domestic-violence-avos": "dv",
+    "drug-offences": "drugs",
+    "firearms-weapons": "weapons",
+    "fraud-financial-crime": "fraud",
+    "cybercrime": "fraud",
+    "court-hearings-trials": "court",
+    "appeals": "court",
+    "sexual-assault-allegations": "court"
+  },
+  "showReviews": false,
+  "reviews": [
+    "Adam was fantastic to deal with. He was professional, easy to talk to and always happy to answer any questions I had. Everything was explained clearly, and I was kept in the loop the whole time.",
+    "Really happy with the service from Adam. He was always quick to respond and made the whole process a lot easier than I expected. Just a genuinely good bloke who knows his stuff.",
+    "Can’t fault Adam at all. He was easy to get hold of, explained everything properly and was always upfront with me. It’s nice dealing with someone who actually takes the time to listen.",
+    "I wasn’t really sure what to expect when looking for a lawyer, but Adam made things pretty straightforward. He explained things in plain English, which I really appreciated.",
+    "Adam was excellent throughout. Very knowledgeable, professional and straightforward to deal with. I appreciated his honesty and the way he kept me updated.",
+    "Great service from Adam. He was patient with all my questions, kept me updated and was always happy to explain things when I wasn’t sure."
+  ]
 }

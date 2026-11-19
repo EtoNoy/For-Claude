@@ -21,6 +21,14 @@
     wrap.addEventListener('focusout', function (e) { if (e.relatedTarget && !wrap.contains(e.relatedTarget)) close(); });
   });
 
+  /* Header: solid once you scroll past the top */
+  var header = $('[data-header]');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-solid', window.scrollY > 24); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   /* Mobile menu */
   var toggle = $('[data-menu-toggle]');
   var mnav = $('#mobile-nav');
@@ -30,6 +38,7 @@
       toggle.setAttribute('aria-expanded', String(openNow));
       toggle.setAttribute('aria-label', openNow ? 'Close navigation' : 'Open navigation');
       mnav.hidden = !openNow;
+      if (header) header.classList.toggle('menu-open', openNow);
     });
   }
 
@@ -87,14 +96,19 @@
       if (count) count.textContent = shown + ' ' + (shown === 1 ? count.getAttribute('data-singular') : count.getAttribute('data-plural'));
       if (empty) empty.hidden = shown !== 0;
     }
-    buttons.forEach(function (b) {
-      b.addEventListener('click', function () {
-        current = b.getAttribute('data-filter');
-        buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
-        apply();
-      });
+    function choose(b) {
+      current = b.getAttribute('data-filter');
+      buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      apply();
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { choose(b); }); });
+    if (search) search.addEventListener('input', function () {
+      var all = $('[data-filter="all"]', bar);
+      if (search.value.trim() && current !== 'all' && all) choose(all); else apply();
     });
-    if (search) search.addEventListener('input', apply);
+    var topic = new URLSearchParams(location.search).get('topic');
+    var start = topic && $('[data-filter="' + topic.replace(/[^a-z-]/g, '') + '"]', bar);
+    if (start) { choose(start); start.scrollIntoView({ block: 'nearest', inline: 'center' }); }
   });
 
   /* Preparation checklists (kept on the page only) */
@@ -153,9 +167,38 @@
     });
   }
 
+  /* Reviews carousel */
+  $$('[data-reviews]').forEach(function (root) {
+    var track = $('[data-reviews-track]', root);
+    function step(dir) {
+      var card = $('.review', track);
+      var w = card ? card.getBoundingClientRect().width + 24 : track.clientWidth;
+      track.scrollBy({ left: dir * w, behavior: 'smooth' });
+    }
+    $('[data-reviews-prev]', root).addEventListener('click', function () { step(-1); });
+    $('[data-reviews-next]', root).addEventListener('click', function () { step(1); });
+  });
+
+  /* Subtle parallax on the statement band */
+  var bands = $$('[data-parallax]');
+  if (bands.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var ticking = false;
+    var move = function () {
+      ticking = false;
+      bands.forEach(function (b) {
+        var r = b.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) return;
+        var p = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+        b.style.setProperty('--py', (p * -60).toFixed(1) + 'px');
+      });
+    };
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(move); } }, { passive: true });
+    move();
+  }
+
   /* Gentle reveal on scroll */
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var targets = $$('.section .section-head, .area-card, .step, .profile-copy, .portrait, .locations-copy, .locations-figure, .value-card, .expect li');
+    var targets = $$('.section .section-head, .area-card, .step, .profile-copy, .portrait, .locations-copy, .locations-figure, .value-card, .expect li, .statement-inner, .review, .timing, .area-law');
     var rio = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); rio.unobserve(en.target); } });
     }, { rootMargin: '0px 0px -8% 0px' });

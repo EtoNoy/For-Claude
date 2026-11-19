@@ -18,11 +18,18 @@ Most text lives in JSON, so you rarely need to touch the HTML templates.
 | --- | --- |
 | Phone, email, address, locations, featured areas | `src/data/site.json` |
 | Practice areas (headline, overview, help list, checklist, FAQs, related) | `src/data/practice-areas.json` |
-| Questions page | `src/data/questions.json` |
+| Questions page (working with us) | `src/data/questions.json` |
+| Legal guide questions | `src/data/legal-guide.json` |
 | Page layouts | `src/templates/pages.mjs` |
 | Header, footer, shared blocks | `src/templates/partials.mjs` |
 | Styles | `src/assets/css/styles.css` |
 | Menus, accordions, filters, form | `src/assets/js/main.js` |
+
+## Client reviews
+
+A reviews carousel is built in but switched off. To show it, set `"showReviews": true`
+in `src/data/site.json` (the review text lives in the same file). Only switch it on for
+genuine client reviews.
 
 ## Run it locally
 
@@ -56,6 +63,6 @@ saved links keep working.
 
 ## Credits
 
-Fonts: Playfair Display and DM Sans (SIL Open Font License, files in `src/assets/fonts`).
+The Frontline wordmark is traced from the firm's original logo artwork. Fonts: Playfair Display and DM Sans (SIL Open Font License, files in `src/assets/fonts`).
 Some icon shapes are adapted from Lucide (ISC licence). Landscape, courthouse and room
 images are illustrative.

@@ -1,7 +1,7 @@
 import { icon } from './icons.mjs';
 import {
   esc, twoLine, eyebrow, arrowLink, btn, closingCta, credentials, areaCard, accordion,
-  locationTabs, steps, breadcrumb, picture
+  locationTabs, steps, breadcrumb, picture, doylesBadges, ticker, reviews
 } from './partials.mjs';
 
 const IMG = { road: 'blue-road', courthouse: 'blue-court', room: 'blue-room', coastline: 'blue-coast' };
@@ -25,20 +25,20 @@ export function home(ctx) {
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      ${eyebrow('Criminal defence. Human first.', 'eyebrow-light')}
-      <h1 class="display">${twoLine(['Your future.', 'Worth defending.'])}</h1>
-      <p class="hero-lead">When everything feels uncertain,<br>who stands beside you matters.</p>
-      <div class="btn-row">
+      <div class="rise" style="--d:0">${eyebrow('Criminal defence. Human first.', 'eyebrow-light')}</div>
+      <h1 class="display"><span class="rise" style="--d:1">Your future.</span><em class="rise" style="--d:2">Worth defending.</em></h1>
+      <p class="hero-lead rise" style="--d:3">When everything feels uncertain,<br>who stands beside you matters.</p>
+      <div class="btn-row rise" style="--d:4">
         ${btn('/contact/', 'Speak with Adam')}
         ${arrowLink('/expertise/', 'Explore our expertise', { cls: 'link-arrow link-light' })}
       </div>
-      <p class="hero-note">${icon('shield')}Clear advice. Personal commitment. Every step.</p>
+      <p class="hero-note rise" style="--d:5">${icon('shield')}Clear advice. Personal commitment. Every step.</p>
     </div>
-    <aside class="hero-quote" aria-label="Frontline Lawyers">
-      <span class="hero-quote-mark">F</span>
-      <p>A clear voice.<br><em>A strong defence.</em></p>
-      <span class="caps">Frontline Lawyers</span>
-    </aside>
+    <a class="hero-proof rise" style="--d:6" href="${site.doylesUrl}" target="_blank" rel="noopener" aria-label="Doyle’s Guide recommended 2023 to 2026, opens the Doyle’s Guide listing">
+      <p class="hero-proof-quote">A clear voice.<br><em>A strong defence.</em></p>
+      ${doylesBadges('badges-row')}
+      <span class="caps">Doyle’s Guide · 2023–2026</span>
+    </a>
     <div class="hero-base">
       <span class="caps">Murwillumbah<span class="dash">—</span>Northern Rivers<span class="dash">—</span>South East Queensland</span>
       <a class="caps hero-scroll" href="#expertise">Scroll to explore${icon('arrow-down')}</a>
@@ -78,14 +78,16 @@ ${credentials(ctx)}
       <p>Adam Ashley brings clear thinking, careful preparation and a direct, personal approach to criminal defence. He listens, explains your options and stays involved from the first conversation to the courtroom.</p>
       <ul class="ticks">
         <li>${icon('check')}Direct access to your principal lawyer</li>
-        <li>${icon('check')}Admitted in NSW and Queensland</li>
+        <li>${icon('check')}Admitted to the Supreme Courts of NSW and Queensland</li>
         <li>${icon('check')}Doyle’s Guide recommended, 2023–2026</li>
       </ul>
       ${arrowLink('/about/', 'Meet Adam Ashley')}
     </div>
   </div>
 </section>
+${reviews(ctx)}
 ${approachBand({ head: ['The Frontline approach', ['A clear path.', 'A committed partner.']], aside: 'A legal matter can be complex.<br>Working with your lawyer should feel clear.', foot: true })}
+${ticker(ctx)}
 <section class="section">
   <div class="container locations">
     <div class="locations-copy">
@@ -99,6 +101,15 @@ ${approachBand({ head: ['The Frontline approach', ['A clear path.', 'A committed
       ${picture('blue-road', 'An illustrative coastal road winding beside the blue ocean')}
       <figcaption class="caps">${icon('compass')}Northern Rivers NSW &amp; South East Queensland</figcaption>
     </figure>
+  </div>
+</section>
+<section class="statement" data-parallax>
+  <img class="statement-bg" src="/assets/images/blue-court.webp" alt="" loading="lazy" decoding="async">
+  <div class="statement-shade" aria-hidden="true"></div>
+  <div class="container statement-inner">
+    ${eyebrow('What we believe', 'eyebrow-light')}
+    <p class="statement-text">Everyone accused of a crime<br><em>deserves a strong defence.</em></p>
+    <p class="statement-sub">Adam looks closely at the evidence, tests police procedure and prepares every matter carefully, from the first conversation to the courtroom.</p>
   </div>
 </section>
 <section class="section section-soft">
@@ -207,7 +218,7 @@ export function area(ctx, a) {
 <nav class="onpage" aria-label="On this page">
   <div class="container onpage-inner">
     <span class="caps">In this section</span>
-    <a href="#overview">Overview</a><a href="#support">How we can help</a><a href="#prepare">Before we speak</a><a href="#faqs">Your questions</a>
+    <a href="#overview">Overview</a><a href="#support">How we can help</a><a href="#law">The law</a><a href="#prepare">Before we speak</a><a href="#faqs">Your questions</a>
     ${arrowLink(enquire, 'Let’s talk', { cls: 'link-blue onpage-cta', arrow: 'arrow-up-right' })}
   </div>
 </nav>
@@ -219,10 +230,19 @@ export function area(ctx, a) {
         <h2 class="h2">${twoLine(a.overviewTitle, false)}</h2>
         <p class="lead">${esc(a.overview[0])}</p>
         <p>${esc(a.overview[1])}</p>
+        <aside class="timing">
+          <span class="timing-ico">${icon('clock')}</span>
+          <div><p class="caps">Why timing matters</p><p>${esc(a.timing)}</p></div>
+        </aside>
       </article>
       <article id="support" class="area-help">
         <h3 class="h3">How we can help</h3>
         <ul class="ticks ticks-2">${a.help.map((h) => `<li>${icon('check')}${esc(h)}</li>`).join('')}</ul>
+      </article>
+      <article id="law" class="area-law">
+        ${eyebrow('The law, briefly')}
+        <p class="law-text">${esc(a.law)}</p>
+        <p class="small">General information only, not legal advice. The law that applies depends on your circumstances and the state involved.</p>
       </article>
       <article id="prepare" class="checklist" data-checklist="${a.slug}">
         <div class="checklist-head">
@@ -243,6 +263,7 @@ export function area(ctx, a) {
       <article id="faqs" class="area-faqs">
         <h2 class="h2">${twoLine(['Your questions,', 'considered.'])}</h2>
         ${accordion(a.faqs)}
+        ${(() => { const t = site.areaGuide[a.slug]; const l = (site.guideCategories.find(([k]) => k === t) || [])[1]; return t ? `<p class="guide-link">${arrowLink(`/questions/?topic=${t}`, `More on ${l.charAt(0).toLowerCase() + l.slice(1)} in our legal guide`)}</p>` : ''; })()}
       </article>
     </div>
     <aside class="lawyer-card">
@@ -254,7 +275,7 @@ export function area(ctx, a) {
       <p>Start with a direct conversation about your situation and what comes next.</p>
       <a class="lawyer-phone" href="${site.phoneHref}">${icon('phone')}${esc(site.phone)}</a>
       ${btn(enquire, 'Make an enquiry', 'btn btn-primary btn-block')}
-      <a class="lawyer-doyles" href="${site.doylesUrl}" target="_blank" rel="noopener">Doyle’s Guide<span class="caps">Recommended 2023–2026</span></a>
+      <a class="lawyer-doyles" href="${site.doylesUrl}" target="_blank" rel="noopener">${doylesBadges('badges-row badges-sm')}<span>Doyle’s Guide<span class="caps">Recommended 2023–2026</span></span></a>
       <p class="small">Have an urgent court or police matter? Please call directly.</p>
     </aside>
   </div>
@@ -295,6 +316,7 @@ export function about(ctx) {
         <p class="lead-lg">A direct line to the person who’s in your corner.</p>
         <p>Adam Ashley is Frontline Lawyers’ Principal Criminal Defence Lawyer. Based in Murwillumbah, he represents clients across Northern Rivers NSW and South East Queensland.</p>
         <div class="btn-row">${btn('/contact/', 'Speak with Adam')}</div>
+        <p class="hero-note dark">${icon('shield-check')}${esc(site.admission)}</p>
       </div>
       <figure class="about-portrait">
         <img src="/assets/images/adam-ashley.webp" alt="Adam Ashley, Principal Criminal Defence Lawyer" width="900" height="1366" fetchpriority="high">
@@ -315,6 +337,7 @@ ${credentials(ctx)}
       <p>Adam’s practice centres on criminal defence. He handles your matter personally and takes the time to understand what matters to you, with clear communication as the proposed strategy develops.</p>
       <p>Admitted in NSW and Queensland, Adam works with experienced criminal defence barristers—including senior counsel—where the proceedings call for it.</p>
       <p>He is recommended in Doyle’s Guide’s Regional NSW criminal lawyer rankings for 2023, 2024, 2025 and 2026.</p>
+      ${doylesBadges('badges-row badges-lg', true)}
       ${arrowLink(site.doylesUrl, 'View the independent ranking record', { arrow: 'arrow-up-right', ext: true })}
     </div>
   </div>
@@ -322,7 +345,8 @@ ${credentials(ctx)}
     ${[
       ['user', 'Personal involvement', 'A direct relationship with the lawyer handling your matter, from the first discussion through to representation.'],
       ['chat', 'Clear communication', 'Understand the proposed next steps, ask questions and make informed decisions about your situation.'],
-      ['scale', 'Considered advocacy', 'Careful preparation, attention to the evidence and collaboration with experienced barristers where appropriate.']
+      ['scale', 'Considered advocacy', 'Careful preparation, attention to the evidence and collaboration with experienced barristers where appropriate.'],
+      ['messages', 'Word of mouth', 'Most clients come to Frontline by referral, from people who were once in a similar position.']
     ].map(([ic, t, p]) => `<article class="value-card">${icon(ic, 'value-ico')}<h3 class="h3">${esc(t)}</h3><p>${esc(p)}</p></article>`).join('')}
   </div>
 </section>
@@ -410,11 +434,15 @@ ${closingCta(ctx)}`
 /* ---------------------------------------------------------------- Questions */
 export function questions(ctx) {
   const { site } = ctx;
-  const qs = ctx.questions;
+  const guideLabel = (k) => (site.guideCategories.find(([c]) => c === k) || [k, k])[1];
+  const items = [
+    ...ctx.questions,
+    ...ctx.guide.map((g) => ({ ...g, tag: `Legal guide · ${guideLabel(g.category)}` }))
+  ];
   return {
     path: '/questions/',
     title: 'Your questions | Frontline Lawyers',
-    description: 'Questions about the first call, working with Adam Ashley or where Frontline Lawyers represents clients? Find a starting point here.',
+    description: 'Questions about working with Adam Ashley, plus a plain-English guide to police powers, bail, drink driving, AVOs, drug charges and the court process.',
     bodyClass: 'page-questions',
     body: `
 <section class="page-hero">
@@ -423,13 +451,18 @@ export function questions(ctx) {
     ${eyebrow('A little more clarity')}
     <div class="page-hero-split">
       <h1 class="display display-dark">${twoLine(['A good place', 'to start.'])}</h1>
-      <p class="page-hero-aside">Questions about the first call, working with Adam or where we represent clients? Find a starting point here.</p>
+      <p class="page-hero-aside">Questions about the first call and working with Adam, plus a plain-English legal guide to police powers, bail, driving, AVOs and the court process.</p>
     </div>
     <div class="filter-bar filter-bar-q" data-filter-group="questions">
-      <label class="search">${icon('search')}<span class="sr-only">Search questions</span><input type="search" placeholder="Search your questions…" data-search autocomplete="off"></label>
-      <div class="filters" role="group" aria-label="Question categories">
-        <button type="button" class="filter" aria-pressed="true" data-filter="all">All questions</button>
-        ${site.questionCategories.map(([k, l]) => `<button type="button" class="filter" aria-pressed="false" data-filter="${k}">${esc(l)}</button>`).join('')}
+      <label class="search">${icon('search')}<span class="sr-only">Search questions</span><input type="search" placeholder="Search ${items.length} questions…" data-search autocomplete="off"></label>
+      <div class="filters-grouped" role="group" aria-label="Question topics">
+        <div class="filter-row"><span class="filter-label">Working with us</span><div class="filters">
+          <button type="button" class="filter" aria-pressed="true" data-filter="all">All questions</button>
+          ${site.questionCategories.map(([k, l]) => `<button type="button" class="filter" aria-pressed="false" data-filter="${k}">${esc(l)}</button>`).join('')}
+        </div></div>
+        <div class="filter-row"><span class="filter-label">Legal guide</span><div class="filters">
+          ${site.guideCategories.map(([k, l]) => `<button type="button" class="filter" aria-pressed="false" data-filter="${k}">${esc(l)}</button>`).join('')}
+        </div></div>
       </div>
     </div>
   </div>
@@ -441,10 +474,11 @@ export function questions(ctx) {
       <h2 class="h2-sm">Let’s talk.</h2>
       <a class="q-phone" href="${site.phoneHref}">${esc(site.phone)}${icon('arrow-up-right')}</a>
       ${arrowLink('/contact/', 'Make an enquiry')}
+      <p class="small q-note">The legal guide is general information about criminal law, mostly in NSW. It isn’t legal advice, and the law changes, so please speak with Adam about your situation.</p>
     </aside>
     <div>
-      <p class="filter-count" role="status" data-count data-singular="question" data-plural="questions">${qs.length} questions</p>
-      <div data-filter-items="questions">${accordion(qs)}</div>
+      <p class="filter-count" role="status" data-count data-singular="question" data-plural="questions">${items.length} questions</p>
+      <div data-filter-items="questions">${accordion(items)}</div>
       <p class="q-empty" data-empty hidden>No questions match your search. Try another word, or call Adam directly.</p>
     </div>
   </div>
@@ -498,7 +532,11 @@ export function contact(ctx) {
             </select>
           </label>
         </div>
-        <label class="field"><span>A little about your matter <i>*</i></span><textarea name="details" rows="4" placeholder="Briefly describe your enquiry and any upcoming court date." required></textarea></label>
+        <div class="field-row">
+          <label class="field"><span>Next court date</span><input type="text" name="courtDate" placeholder="If you have one"></label>
+          <label class="field"><span>Court location</span><input type="text" name="courtLocation" placeholder="e.g. Tweed Heads"></label>
+        </div>
+        <label class="field"><span>A little about your matter <i>*</i></span><textarea name="details" rows="4" placeholder="Briefly describe your enquiry." required></textarea></label>
         <p class="form-note">${icon('lock')}Please keep this brief and leave out sensitive documents or detailed evidence. Adam will explain how to share those safely.</p>
         <button class="btn btn-primary btn-block" type="submit">Send my enquiry${icon('arrow-right')}</button>
         <p class="small">* Required. An enquiry does not establish a lawyer–client relationship.</p>

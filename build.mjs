@@ -13,6 +13,7 @@ const readJSON = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
 const site = readJSON('src/data/site.json');
 const areas = readJSON('src/data/practice-areas.json');
 const questions = readJSON('src/data/questions.json');
+const guide = readJSON('src/data/legal-guide.json');
 
 // Sanity checks so a typo in the data fails the build instead of shipping a broken link.
 const slugs = new Set(areas.map((a) => a.slug));
@@ -30,7 +31,7 @@ const ver = createHash('sha1')
   .update(readFileSync(join(root, 'src/assets/js/main.js')))
   .digest('hex').slice(0, 8);
 
-const ctx = { site, areas, questions };
+const ctx = { site, areas, questions, guide };
 
 function layout(p) {
   const url = site.url + (p.path === '/404.html' ? '/' : p.path);
@@ -52,7 +53,6 @@ ${p.noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" 
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${img}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" sizes="64x64" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -135,5 +135,5 @@ ${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${today}<
 `);
 writeFileSync(join(out, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
 
-if (!existsSync(join(out, 'favicon.svg'))) console.warn('warning: public/favicon.svg missing');
+if (!existsSync(join(out, 'favicon.png'))) console.warn('warning: public/favicon.png missing');
 console.log(`Built ${all.length} pages into dist/ (assets v${ver})`);
