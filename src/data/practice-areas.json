@@ -1,0 +1,850 @@
+[
+  {
+    "slug": "drink-driving-dui",
+    "title": "Driving & traffic",
+    "name": "Drink & drug driving",
+    "category": "driving",
+    "icon": "road",
+    "summary": "When a driving allegation puts your everyday life in question, clear advice helps you understand the road ahead.",
+    "headline": [
+      "Your licence.",
+      "Your livelihood."
+    ],
+    "overviewTitle": [
+      "Understand your position.",
+      "Plan your next step."
+    ],
+    "overview": [
+      "Driving can be essential to your work, family and independence. A drink or drug driving allegation deserves attention to the particular charge, the documents you have received and the court or authority involved.",
+      "Adam takes the time to understand what is at stake for you. Discuss the evidence, your circumstances and the preparation needed for your matter, with direct communication throughout."
+    ],
+    "help": [
+      "Drink driving allegations",
+      "Drug driving allegations",
+      "Court preparation and representation",
+      "Related licence concerns"
+    ],
+    "checklist": [
+      "Your charge or court attendance documents",
+      "Any licence or suspension notices",
+      "The date and location of your next appearance",
+      "A short timeline and questions for your lawyer"
+    ],
+    "faqs": [
+      {
+        "q": "Can you advise about my licence as well as my charge?",
+        "a": "Tell Adam about every notice you have received. The charge and any licence issue need to be considered together, with advice tailored to the relevant state and your circumstances."
+      },
+      {
+        "q": "What should I have ready when I call?",
+        "a": "Have your court paperwork, any licence notice and upcoming dates nearby. You can begin the conversation even if you do not yet have every document."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "traffic-offences",
+      "licence-suspensions-appeals",
+      "assault-charges"
+    ],
+    "image": "road",
+    "imageAlt": "Illustrative coastal road"
+  },
+  {
+    "slug": "drug-offences",
+    "title": "Drug offences",
+    "name": "Drug possession & supply",
+    "category": "criminal",
+    "icon": "file-pill",
+    "summary": "Focused advice and careful preparation for drug possession, supply and related allegations.",
+    "headline": [
+      "A serious allegation.",
+      "A considered defence."
+    ],
+    "overviewTitle": [
+      "The details matter.",
+      "So does your defence."
+    ],
+    "overview": [
+      "Drug allegations can involve very different circumstances. Understanding the precise allegation and the available evidence is an important starting point for a meaningful discussion about your options.",
+      "Adam works personally on your matter, reviewing the information available and explaining the proposed next steps. You can discuss possession or supply allegations and the representation your case may require."
+    ],
+    "help": [
+      "Drug possession allegations",
+      "Drug supply allegations",
+      "Review of the prosecution material",
+      "Preparation for hearings and trials"
+    ],
+    "checklist": [
+      "Your charge or court attendance documents",
+      "Any court orders or bail documents",
+      "Key dates and correspondence you have received",
+      "A concise account of your circumstances"
+    ],
+    "faqs": [
+      {
+        "q": "Do you handle both possession and supply matters?",
+        "a": "Yes. Drug possession and supply are listed practice areas at Frontline Lawyers. Speak directly with Adam about the particular allegations and the court involved."
+      },
+      {
+        "q": "Will my matter need a barrister?",
+        "a": "That depends on the proceedings and the needs of your case. Adam can discuss whether a barrister is appropriate and how that would fit into your representation."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "assault-charges",
+      "police-matters",
+      "firearms-weapons"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "assault-charges",
+    "title": "Criminal charges",
+    "name": "Assault & violent offences",
+    "category": "criminal",
+    "icon": "shield-check",
+    "summary": "A calm, focused approach to assault allegations and other violent offences, built around your individual circumstances.",
+    "headline": [
+      "Your side of the story.",
+      "A voice that matters."
+    ],
+    "overviewTitle": [
+      "A complete picture.",
+      "A carefully prepared response."
+    ],
+    "overview": [
+      "An allegation is only part of the picture. Your circumstances, the evidence and what matters to you all belong in the conversation about your defence.",
+      "Adam listens carefully, explains your options and prepares your matter with attention to the details. From the first discussion through to representation, you have a direct point of contact."
+    ],
+    "help": [
+      "Assault allegations",
+      "Violent offences",
+      "Evidence review and case preparation",
+      "Court hearings and trial representation"
+    ],
+    "checklist": [
+      "All charge and court documents",
+      "Any related orders or bail conditions",
+      "Your upcoming court dates",
+      "A brief timeline to discuss privately with Adam"
+    ],
+    "faqs": [
+      {
+        "q": "What if there is a related domestic violence order?",
+        "a": "Tell Adam about any related order, application or court date at the outset, so your matters can be discussed in context."
+      },
+      {
+        "q": "Can I speak directly to the lawyer handling my case?",
+        "a": "Yes. Adam handles your matter personally and is your direct point of contact at Frontline Lawyers."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "police-matters",
+      "firearms-weapons"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "court-hearings-trials",
+    "title": "Hearings & trials",
+    "name": "Court hearings & trials",
+    "category": "court",
+    "icon": "landmark",
+    "summary": "Thorough preparation and committed advocacy for contested hearings and criminal trials.",
+    "headline": [
+      "Prepared with care.",
+      "Represented with conviction."
+    ],
+    "overviewTitle": [
+      "Good preparation begins",
+      "before the courtroom."
+    ],
+    "overview": [
+      "Court proceedings can feel unfamiliar. Knowing what is being prepared, who is involved and what the next stage means helps you take part in informed decisions about your matter.",
+      "Adam works on your case personally and collaborates with experienced trial barristers where appropriate. The focus is on understanding the evidence and planning your representation carefully."
+    ],
+    "help": [
+      "Criminal court hearings",
+      "Contested proceedings",
+      "Trial preparation",
+      "Coordination with experienced barristers"
+    ],
+    "checklist": [
+      "The latest court documents and orders",
+      "Your listed hearing or trial dates",
+      "Any material from an earlier lawyer",
+      "Questions about the next stage of your case"
+    ],
+    "faqs": [
+      {
+        "q": "Do you work with trial barristers?",
+        "a": "Yes. Adam works with experienced criminal defence barristers, including senior counsel, where a matter calls for it."
+      },
+      {
+        "q": "Can you discuss a case that is already underway?",
+        "a": "Yes. Explain the current stage, your next court date and any existing representation when you contact Adam. He can discuss availability and what information he would need."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "bail-applications",
+      "appeals",
+      "assault-charges"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "police-matters",
+    "title": "Police matters",
+    "name": "Police matters",
+    "category": "criminal",
+    "icon": "messages",
+    "summary": "Direct legal advice when you have been contacted by police or are concerned about an investigation.",
+    "headline": [
+      "Before your next step.",
+      "Get a clear perspective."
+    ],
+    "overviewTitle": [
+      "Early questions deserve",
+      "careful answers."
+    ],
+    "overview": [
+      "Police contact can raise immediate questions. A private conversation with a lawyer can help you understand what advice you need for the situation you are facing.",
+      "Let Adam know what has happened, whether you have received any paperwork and whether an interview or other event has been proposed. For an urgent situation, call directly."
+    ],
+    "help": [
+      "Advice before charges",
+      "Police investigations",
+      "Proposed interviews",
+      "Planning the next steps"
+    ],
+    "checklist": [
+      "The name and contact details of the police officer, if known",
+      "Any correspondence or documents provided",
+      "Details of any proposed appointment or interview",
+      "A short outline of what has happened"
+    ],
+    "faqs": [
+      {
+        "q": "Can I contact you before I have been charged?",
+        "a": "Yes. Police matters and pre-charge advice form part of Frontline’s criminal defence practice."
+      },
+      {
+        "q": "What is the best way to make an urgent enquiry?",
+        "a": "Call Adam directly on 0421 066 608 and explain the timing. Email is better suited to a non-urgent initial enquiry."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "firearms-weapons"
+    ],
+    "image": "room",
+    "imageAlt": "Illustrative consultation room"
+  },
+  {
+    "slug": "firearms-weapons",
+    "title": "Firearms & weapons",
+    "name": "Firearms & weapons offences",
+    "category": "criminal",
+    "icon": "crosshair",
+    "summary": "Considered advice and case preparation for firearms and weapons allegations.",
+    "headline": [
+      "Complex allegations.",
+      "Focused representation."
+    ],
+    "overviewTitle": [
+      "Understand the allegation.",
+      "Prepare the response."
+    ],
+    "overview": [
+      "Firearms and weapons matters depend on the precise allegation and the relevant documents. Start with a clear account of what has happened and any dates or notices that need attention.",
+      "Adam can discuss the criminal matter, review the available information and explain the scope of representation. Raise any related licensing correspondence at your first conversation."
+    ],
+    "help": [
+      "Firearms allegations",
+      "Weapons offences",
+      "Review of relevant documents",
+      "Criminal court representation"
+    ],
+    "checklist": [
+      "Your charge documents",
+      "Any related licence notices or correspondence",
+      "Court dates and relevant orders",
+      "A summary of the issue you need advice about"
+    ],
+    "faqs": [
+      {
+        "q": "Should I mention a related licence issue?",
+        "a": "Yes. Bring any related licence correspondence to Adam’s attention so he can understand the full context and discuss the scope of advice."
+      },
+      {
+        "q": "What if I only have limited paperwork?",
+        "a": "Start with what you have. Adam can explain what additional information may be needed after your initial conversation."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "bail-applications",
+    "title": "Bail applications",
+    "name": "Bail applications",
+    "category": "court",
+    "icon": "key",
+    "summary": "Direct support and careful preparation when a matter involves custody or a bail application.",
+    "headline": [
+      "When freedom matters.",
+      "Preparation matters."
+    ],
+    "overviewTitle": [
+      "A personal situation.",
+      "A carefully prepared application."
+    ],
+    "overview": [
+      "When someone is in custody, timing and clear communication matter. Speak directly with Adam about the situation, the court involved and any upcoming appearance.",
+      "A conversation can establish what information is available, what preparation may be needed and whether the firm can assist. Family members can make an initial enquiry on behalf of someone in custody."
+    ],
+    "help": [
+      "Bail application preparation",
+      "Review of the current circumstances",
+      "Court representation",
+      "Communication about proposed next steps"
+    ],
+    "checklist": [
+      "The person’s name and current location",
+      "Available charge and court documents",
+      "Any existing bail decision or conditions",
+      "Known court dates and a contact person"
+    ],
+    "faqs": [
+      {
+        "q": "Can a family member make the first call?",
+        "a": "Yes. A family member can make an initial enquiry and explain the situation. Adam will discuss the arrangements needed to take instructions and provide advice."
+      },
+      {
+        "q": "Can you promise a particular bail outcome?",
+        "a": "No. Outcomes depend on the individual facts, the law and the court’s decision. The focus is on careful preparation and advice about your circumstances."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "court-hearings-trials",
+      "appeals",
+      "assault-charges"
+    ],
+    "image": "coastline",
+    "imageAlt": "Illustrative Australian coastline"
+  },
+  {
+    "slug": "traffic-offences",
+    "title": "Traffic offences",
+    "name": "Traffic offences",
+    "category": "driving",
+    "icon": "car",
+    "summary": "Straightforward advice and representation for traffic allegations across NSW and Queensland.",
+    "headline": [
+      "Keep your options clear.",
+      "Find your way forward."
+    ],
+    "overviewTitle": [
+      "Everyday consequences.",
+      "Individual advice."
+    ],
+    "overview": [
+      "A traffic allegation can affect more than a single journey. Explain your work, family commitments and any related licence issues so they can be considered in the discussion about your matter.",
+      "Adam can review the paperwork you have received and discuss the proposed steps, the court involved and the representation that may be appropriate."
+    ],
+    "help": [
+      "Traffic allegations",
+      "Driving-related court matters",
+      "Related licence issues",
+      "Preparation and representation"
+    ],
+    "checklist": [
+      "The notice or charge you have received",
+      "Any licence correspondence",
+      "The next response or court date shown on your paperwork",
+      "Questions about your circumstances and options"
+    ],
+    "faqs": [
+      {
+        "q": "Do you handle matters in both states?",
+        "a": "Adam is admitted in NSW and Queensland and represents clients across Northern Rivers NSW and South East Queensland. Confirm the particular court with him."
+      },
+      {
+        "q": "Is this the same as a licence appeal?",
+        "a": "They may involve different issues. Tell Adam about all notices you have received so he can discuss the advice and representation relevant to each."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drink-driving-dui",
+      "licence-suspensions-appeals",
+      "assault-charges"
+    ],
+    "image": "road",
+    "imageAlt": "Illustrative coastal road"
+  },
+  {
+    "slug": "licence-suspensions-appeals",
+    "title": "Licence appeals",
+    "name": "Licence suspensions & appeals",
+    "category": "driving",
+    "icon": "id-card",
+    "summary": "Advice about licence suspensions and appeals, with attention to the impact on your everyday life.",
+    "headline": [
+      "Your independence.",
+      "Your next move."
+    ],
+    "overviewTitle": [
+      "Start with your notice.",
+      "Understand your options."
+    ],
+    "overview": [
+      "A suspension notice can leave you with practical questions about work, travel and family. The specific notice and the dates on it are the starting point for a useful discussion.",
+      "Share all relevant correspondence with Adam and explain your circumstances. He can discuss the applicable process and whether the firm can assist with your particular matter."
+    ],
+    "help": [
+      "Licence suspension matters",
+      "Licence appeals",
+      "Review of relevant notices",
+      "Court preparation where appropriate"
+    ],
+    "checklist": [
+      "The full suspension notice",
+      "The date you received the notice",
+      "Related traffic or court documents",
+      "Information about your work and transport needs"
+    ],
+    "faqs": [
+      {
+        "q": "Should I wait until the suspension starts to call?",
+        "a": "Contact Adam promptly and tell him all dates shown on the notice. Timing can be important, and your options need to be assessed for your particular matter."
+      },
+      {
+        "q": "What should I send with an initial enquiry?",
+        "a": "Begin with a brief summary and the relevant dates. Ask Adam how he would like to receive documents before sharing detailed material."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drink-driving-dui",
+      "traffic-offences",
+      "assault-charges"
+    ],
+    "image": "road",
+    "imageAlt": "Illustrative coastal road"
+  },
+  {
+    "slug": "appeals",
+    "title": "Appeals",
+    "name": "Criminal appeals",
+    "category": "court",
+    "icon": "scale",
+    "summary": "Careful advice about an existing court decision and the possibility of further proceedings.",
+    "headline": [
+      "A decision made.",
+      "A next step to consider."
+    ],
+    "overviewTitle": [
+      "Look closely at the decision.",
+      "Consider what comes next."
+    ],
+    "overview": [
+      "An appeal needs individual assessment. Start by explaining the decision, when it was made and what you want to discuss with your lawyer.",
+      "Adam can consider the information available and discuss the scope of advice required. Contact the firm promptly with relevant dates; this website cannot determine whether an appeal is available or appropriate."
+    ],
+    "help": [
+      "Review of a criminal court decision",
+      "Advice about proposed appeal proceedings",
+      "Preparation of relevant material",
+      "Court representation"
+    ],
+    "checklist": [
+      "The decision or orders you want to discuss",
+      "The date of the decision",
+      "Relevant court documents and prior advice",
+      "A clear outline of the concern you wish to raise"
+    ],
+    "faqs": [
+      {
+        "q": "How do I know whether I can appeal?",
+        "a": "That requires advice about your decision, the court involved and the relevant timing. Contact Adam with the documents and dates so your position can be assessed."
+      },
+      {
+        "q": "Can you assess a matter handled by another lawyer?",
+        "a": "Explain the current circumstances and previous representation when you enquire. Adam can discuss the information and arrangements needed for any proposed engagement."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "court-hearings-trials",
+      "bail-applications",
+      "assault-charges"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "public-nuisance",
+    "title": "Public order matters",
+    "name": "Public nuisance & disorderly conduct",
+    "category": "criminal",
+    "icon": "megaphone",
+    "summary": "Personal advice for public nuisance and disorderly conduct allegations.",
+    "headline": [
+      "A difficult moment.",
+      "A clear next step."
+    ],
+    "overviewTitle": [
+      "Put the situation",
+      "in perspective."
+    ],
+    "overview": [
+      "Even a matter that appears straightforward can raise questions about what happens next. Understanding the exact allegation and the documents you have received helps frame the conversation.",
+      "Adam can discuss your circumstances, proposed preparation and the available scope of representation. Bring your questions about the court process and possible next steps."
+    ],
+    "help": [
+      "Public nuisance allegations",
+      "Disorderly conduct matters",
+      "Review of court paperwork",
+      "Court preparation and representation"
+    ],
+    "checklist": [
+      "Any notice or charge documents",
+      "Dates and location of the alleged incident",
+      "Your next court date, if listed",
+      "Questions you want to discuss with Adam"
+    ],
+    "faqs": [
+      {
+        "q": "Is my matter too small to discuss with a lawyer?",
+        "a": "If you are concerned about an allegation, you can contact Adam to discuss the type of advice or representation you need."
+      },
+      {
+        "q": "Can you explain the court process?",
+        "a": "Yes. A conference can cover the next stage of your matter and the preparation involved, based on the court and allegation concerned."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "room",
+    "imageAlt": "Illustrative consultation room"
+  },
+  {
+    "slug": "domestic-violence-avos",
+    "title": "Domestic violence & AVOs",
+    "name": "Domestic violence & AVOs",
+    "category": "criminal",
+    "icon": "home",
+    "summary": "Clear, considered advice for domestic violence allegations and related orders.",
+    "headline": [
+      "Sensitive circumstances.",
+      "Steady guidance."
+    ],
+    "overviewTitle": [
+      "Clarity when the situation",
+      "feels complicated."
+    ],
+    "overview": [
+      "Personal allegations and related orders can create difficult questions. A private conversation helps Adam understand the different documents, proceedings and dates involved.",
+      "Discuss your circumstances and what support you are seeking. Adam provides a direct point of contact and can explain the proposed scope of advice and representation."
+    ],
+    "help": [
+      "Domestic violence allegations",
+      "Apprehended violence orders",
+      "Related criminal proceedings",
+      "Court preparation and representation"
+    ],
+    "checklist": [
+      "Any order or application served on you",
+      "Related charge documents",
+      "All upcoming court dates",
+      "Your questions about the current circumstances"
+    ],
+    "faqs": [
+      {
+        "q": "Should I mention both an order and a criminal charge?",
+        "a": "Yes. Tell Adam about every related proceeding and provide the relevant paperwork, so he can discuss your situation in context."
+      },
+      {
+        "q": "Can I discuss a sensitive matter privately?",
+        "a": "Contact Adam directly to arrange a suitable conversation. Keep initial online enquiries brief and ask how to provide sensitive documents securely."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "room",
+    "imageAlt": "Illustrative consultation room"
+  },
+  {
+    "slug": "cybercrime",
+    "title": "Cybercrime",
+    "name": "Cybercrime & digital offences",
+    "category": "criminal",
+    "icon": "monitor",
+    "summary": "Focused advice and preparation for allegations involving technology and digital material.",
+    "headline": [
+      "Digital evidence.",
+      "Real-world consequences."
+    ],
+    "overviewTitle": [
+      "Bring clarity to",
+      "the technical details."
+    ],
+    "overview": [
+      "Digital allegations may involve records, devices and communications that need careful consideration. The starting point is understanding the allegation and the material available.",
+      "Adam can discuss the scope of the matter and the advice or representation you need. For an initial enquiry, provide a brief outline and ask how to share relevant documents."
+    ],
+    "help": [
+      "Cybercrime allegations",
+      "Digital offences",
+      "Review of relevant material",
+      "Defence and court preparation"
+    ],
+    "checklist": [
+      "Your charge or investigation documents",
+      "Relevant dates and court details",
+      "A list of the material already provided to you",
+      "A short outline of your questions"
+    ],
+    "faqs": [
+      {
+        "q": "Should I upload digital evidence through this website?",
+        "a": "No. Use the enquiry form for a brief introduction. Ask Adam how he would like to receive evidence or sensitive material."
+      },
+      {
+        "q": "Can I get advice during an investigation?",
+        "a": "Yes. Explain whether you are under investigation, have been charged or have a court date, so the next conversation can focus on your current position."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "fraud-financial-crime",
+    "title": "Financial crime",
+    "name": "Fraud & financial crime",
+    "category": "criminal",
+    "icon": "banknote",
+    "summary": "Considered representation for fraud and financial crime allegations.",
+    "headline": [
+      "Complex material.",
+      "Clear-eyed defence."
+    ],
+    "overviewTitle": [
+      "Make sense of the detail.",
+      "Build a considered response."
+    ],
+    "overview": [
+      "Financial allegations can involve substantial documents and a complicated timeline. Understanding the precise allegation is the first step towards a useful discussion about your defence.",
+      "Adam can discuss the relevant material, your circumstances and the preparation a matter may require. You will have a direct point of contact as the proposed strategy takes shape."
+    ],
+    "help": [
+      "Fraud allegations",
+      "Financial crime matters",
+      "Document and evidence review",
+      "Preparation for court proceedings"
+    ],
+    "checklist": [
+      "The charge or investigation correspondence",
+      "Any upcoming court or appointment dates",
+      "An outline of the relevant timeline",
+      "A list of documents available for review"
+    ],
+    "faqs": [
+      {
+        "q": "What if there are a lot of documents?",
+        "a": "Start by describing what material you have. Adam can discuss what is relevant and the arrangements for reviewing it."
+      },
+      {
+        "q": "Will the proposed costs be discussed?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. The work required depends on the matter."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "room",
+    "imageAlt": "Illustrative consultation room"
+  },
+  {
+    "slug": "sexual-assault-allegations",
+    "title": "Sexual assault allegations",
+    "name": "Sexual assault allegations",
+    "category": "criminal",
+    "icon": "shield-lock",
+    "summary": "Discreet, considered advice and preparation for sensitive criminal allegations.",
+    "headline": [
+      "Serious allegations.",
+      "Careful, committed defence."
+    ],
+    "overviewTitle": [
+      "Personal attention.",
+      "Thorough preparation."
+    ],
+    "overview": [
+      "Sensitive allegations call for an individual approach and a clear understanding of the proceedings. Adam listens to your circumstances and discusses the information needed to advise you.",
+      "Your matter is handled personally, with experienced barristers involved where appropriate. The focus is on careful preparation, clear communication and considered representation."
+    ],
+    "help": [
+      "Advice about the allegation",
+      "Review of the available material",
+      "Preparation for criminal proceedings",
+      "Barrister coordination where appropriate"
+    ],
+    "checklist": [
+      "Available charge and court documents",
+      "Any orders or bail documents",
+      "Your next court or police appointment date",
+      "A brief outline for a private discussion"
+    ],
+    "faqs": [
+      {
+        "q": "How should I make a first enquiry about a sensitive allegation?",
+        "a": "Call Adam directly or send a short initial enquiry with your contact details. Ask how to arrange a private discussion and provide relevant material."
+      },
+      {
+        "q": "Will Adam remain involved if a barrister is engaged?",
+        "a": "Adam’s approach is to handle your matter personally and work with the barrister where one is engaged as part of your representation."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  },
+  {
+    "slug": "murder-manslaughter",
+    "title": "Murder & manslaughter",
+    "name": "Murder & manslaughter",
+    "category": "criminal",
+    "icon": "gavel",
+    "summary": "Carefully prepared criminal defence for the most serious allegations.",
+    "headline": [
+      "The highest stakes.",
+      "An unwavering commitment."
+    ],
+    "overviewTitle": [
+      "Serious matters demand",
+      "careful attention."
+    ],
+    "overview": [
+      "A serious criminal allegation can affect the person charged and the people around them. Direct communication and clarity about the next steps are essential to the discussion about representation.",
+      "Adam works with experienced criminal defence barristers where appropriate, bringing personal involvement to the preparation of your matter. Call directly to discuss the current circumstances and availability."
+    ],
+    "help": [
+      "Murder and manslaughter allegations",
+      "Evidence review and defence preparation",
+      "Serious criminal proceedings",
+      "Collaboration with trial barristers"
+    ],
+    "checklist": [
+      "The person’s name and current circumstances",
+      "Available charge and court documents",
+      "Any known court dates",
+      "Contact details for the initial discussion"
+    ],
+    "faqs": [
+      {
+        "q": "Can a family member contact the firm?",
+        "a": "Yes. A family member can make an initial enquiry. Adam can discuss what is needed to take instructions and arrange representation."
+      },
+      {
+        "q": "Do you work with senior counsel?",
+        "a": "Adam works with experienced trial barristers, including senior counsel, where the needs of the matter call for it. Discuss the proposed arrangements directly with him."
+      },
+      {
+        "q": "How will we discuss costs?",
+        "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+      }
+    ],
+    "related": [
+      "drug-offences",
+      "assault-charges",
+      "police-matters"
+    ],
+    "image": "courthouse",
+    "imageAlt": "Illustrative courthouse architecture"
+  }
+]

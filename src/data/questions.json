@@ -1,0 +1,57 @@
+[
+  {
+    "category": "start",
+    "q": "What happens in our first conversation?",
+    "a": "We begin with what has happened, any upcoming court date and what you need help with. Adam can then discuss the information required, arrangements for a conference and the next steps."
+  },
+  {
+    "category": "together",
+    "q": "Will I deal directly with Adam?",
+    "a": "Yes. Adam handles your matter personally and is your direct point of contact. When a barrister is appropriate, he works with experienced advocates as part of your defence."
+  },
+  {
+    "category": "start",
+    "q": "Can I contact you before I have been charged?",
+    "a": "Yes. Police matters and pre-charge advice are part of Frontline’s practice. Explain the situation and any proposed interview or appointment when you call."
+  },
+  {
+    "category": "start",
+    "q": "What should I bring to an initial conference?",
+    "a": "Have your court or police paperwork, relevant dates and a short list of questions available. The preparation checklist on each practice-area page offers a starting point. Adam can tell you what else he needs."
+  },
+  {
+    "category": "together",
+    "q": "Can we meet by phone or video?",
+    "a": "Initial conferences can be arranged in person or by video. Call Adam to discuss a suitable arrangement and availability."
+  },
+  {
+    "category": "together",
+    "q": "How do I find out about legal fees?",
+    "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+  },
+  {
+    "category": "locations",
+    "q": "Which areas do you represent clients in?",
+    "a": "Frontline is based in Murwillumbah and represents clients across Northern Rivers NSW and South East Queensland, including Tweed Heads, Byron Bay, Ballina, Lismore, Coolangatta, Southport, Beenleigh and Brisbane. Confirm your particular court with Adam."
+  },
+  {
+    "category": "together",
+    "q": "Do you work with criminal trial barristers?",
+    "a": "Yes. Adam collaborates with experienced criminal defence barristers, including senior counsel, where a matter calls for it."
+  },
+  {
+    "category": "start",
+    "q": "Can a family member make an initial enquiry?",
+    "a": "Yes. A family member may make an initial enquiry. Adam will discuss the arrangements needed to take instructions and provide advice."
+  },
+  {
+    "category": "start",
+    "q": "How do I make an urgent enquiry?",
+    "a": "Please call 0421 066 608 directly and explain the timing. The website’s enquiry form is intended for non-urgent enquiries."
+  },
+  {
+    "category": "together",
+    "q": "Does sending an enquiry engage the firm?",
+    "a": "No. The firm must confirm the engagement, availability and proposed costs separately. An enquiry or use of this website does not create a lawyer–client relationship."
+  }
+]

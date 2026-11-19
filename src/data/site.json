@@ -1,0 +1,54 @@
+{
+  "name": "Frontline Lawyers",
+  "url": "https://frontlinelawyers.com.au",
+  "themeColor": "#0b2443",
+  "phone": "0421 066 608",
+  "phoneHref": "tel:+61421066608",
+  "email": "adam@frontlinelaw.com.au",
+  "postal": ["PO Box 104", "Murwillumbah NSW 2484"],
+  "region": "Northern Rivers NSW / South East Queensland",
+  "doylesUrl": "https://doylesguide.com/people/au/adam-ashley/",
+  "lawyer": {
+    "name": "Adam Ashley",
+    "title": "Principal Criminal Defence Lawyer"
+  },
+  "featured": [
+    "assault-charges",
+    "drink-driving-dui",
+    "drug-offences",
+    "bail-applications",
+    "domestic-violence-avos",
+    "court-hearings-trials"
+  ],
+  "footerExpertise": [
+    ["Criminal defence", "assault-charges"],
+    ["Driving & traffic", "drink-driving-dui"],
+    ["Bail applications", "bail-applications"],
+    ["Hearings & trials", "court-hearings-trials"]
+  ],
+  "categories": [
+    ["criminal", "Criminal defence"],
+    ["driving", "Driving & traffic"],
+    ["court", "Court & appeals"]
+  ],
+  "questionCategories": [
+    ["start", "Getting started"],
+    ["together", "Working together"],
+    ["locations", "Locations"]
+  ],
+  "locations": {
+    "nsw": {
+      "label": "Northern Rivers NSW",
+      "places": ["Murwillumbah", "Tweed Heads", "Byron Bay", "Ballina", "Lismore", "Mullumbimby", "Casino", "Maclean"]
+    },
+    "qld": {
+      "label": "South East Queensland",
+      "places": ["Coolangatta", "Southport", "Brisbane", "Beenleigh", "Robina", "Burleigh Heads", "Surfers Paradise", "Broadbeach"]
+    }
+  },
+  "costsFaq": {
+    "q": "How do I find out about legal fees?",
+    "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
+  },
+  "disclaimer": "General information, not legal advice. An enquiry does not create a lawyer–client relationship. Liability limited by a scheme approved under Professional Standards Legislation. Landscape and architectural imagery is illustrative."
+}

@@ -1,0 +1,138 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Long cache for fonts and images; CSS/JS are versioned with ?v= on every build.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# ---- Redirects from the previous site so existing links and Google results keep working ----
+[[redirects]]
+  from = "/about-adam"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/why-choose-us"
+  to = "/approach/"
+  status = 301
+
+[[redirects]]
+  from = "/reviews"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/faqs"
+  to = "/questions/"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/questions/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy/"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-service"
+  to = "/legal/"
+  status = 301
+
+[[redirects]]
+  from = "/disclaimer"
+  to = "/legal/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas"
+  to = "/expertise/"
+  status = 301
+
+# Old practice area slugs that changed name
+[[redirects]]
+  from = "/practice-areas/bail-matters"
+  to = "/expertise/bail-applications/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/licence-matters"
+  to = "/expertise/licence-suspensions-appeals/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/domestic-violence"
+  to = "/expertise/domestic-violence-avos/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/domestic-violence-dvo"
+  to = "/expertise/domestic-violence-avos/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/domestic-violence-avo"
+  to = "/expertise/domestic-violence-avos/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/avo"
+  to = "/expertise/domestic-violence-avos/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/stalk-intimidation"
+  to = "/expertise/domestic-violence-avos/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/rape-sexual-assault"
+  to = "/expertise/sexual-assault-allegations/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/centrelink-fraud"
+  to = "/expertise/fraud-financial-crime/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/money-laundering"
+  to = "/expertise/fraud-financial-crime/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/self-defence"
+  to = "/expertise/assault-charges/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/manslaughter"
+  to = "/expertise/murder-manslaughter/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/murder-charges"
+  to = "/expertise/murder-manslaughter/"
+  status = 301
+
+# Every other old practice area kept its slug
+[[redirects]]
+  from = "/practice-areas/:slug"
+  to = "/expertise/:slug/"
+  status = 301
