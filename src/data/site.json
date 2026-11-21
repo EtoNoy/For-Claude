@@ -105,7 +105,7 @@
     "q": "How do I find out about legal fees?",
     "a": "Ask Adam to explain the proposed scope of work, costs and payment arrangements before engaging the firm. Fees depend on the circumstances and work required; this website does not quote a fee."
   },
-  "disclaimer": "General information, not legal advice. An enquiry does not create a lawyer–client relationship. Liability limited by a scheme approved under Professional Standards Legislation. Landscape and architectural imagery is illustrative.",
+  "disclaimer": "General information, not legal advice. An enquiry does not create a lawyer–client relationship. Liability limited by a scheme approved under Professional Standards Legislation. Landscape photography of the Tweed Valley is used under Creative Commons licences.",
   "admission": "Admitted to the Supreme Courts of NSW and Queensland",
   "guideCategories": [
     [
@@ -171,5 +171,35 @@
     "I wasn’t really sure what to expect when looking for a lawyer, but Adam made things pretty straightforward. He explained things in plain English, which I really appreciated.",
     "Adam was excellent throughout. Very knowledgeable, professional and straightforward to deal with. I appreciated his honesty and the way he kept me updated.",
     "Great service from Adam. He was patient with all my questions, kept me updated and was always happy to explain things when I wasn’t sure."
+  ],
+  "photoCredits": [
+    {
+      "what": "Wollumbin / Mt Warning from Clarrie Hall Dam",
+      "author": "Pouts31",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Clarrie_hall_dam_mount_warning.JPG"
+    },
+    {
+      "what": "Wollumbin / Mt Warning from the Pinnacle Lookout",
+      "author": "KHN45",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Mt_Warning_as_seen_from_Pinnacle_Lookout_in_the_NSW_Border_Ranges.jpg"
+    },
+    {
+      "what": "Wollumbin / Mt Warning at dusk",
+      "author": "Bigballsybananas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_warning.jpg"
+    },
+    {
+      "what": "Springbrook and Wollumbin from Tallebudgera Creek",
+      "author": "Jack Bain",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:View_to_Springbrook,_Mount_Warning_from_Tallebudgera_Creek,_Queensland.jpg"
+    }
   ]
 }

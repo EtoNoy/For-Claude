@@ -4,7 +4,7 @@ import {
   locationTabs, steps, breadcrumb, picture, doylesBadges, ticker, reviews
 } from './partials.mjs';
 
-const IMG = { road: 'blue-road', courthouse: 'blue-court', room: 'blue-room', coastline: 'blue-coast' };
+const IMG = { pinnacle: 'wollumbin-pinnacle', dam: 'wollumbin-dam', dusk: 'wollumbin-dusk', tallebudgera: 'tallebudgera', room: 'blue-room' };
 const catLabel = (site, key) => (site.categories.find(([k]) => k === key) || [key, key])[1];
 const num = (i) => String(i + 1).padStart(2, '0');
 
@@ -21,7 +21,7 @@ export function home(ctx) {
     bodyClass: 'page-home',
     body: `
 <section class="hero">
-  <img class="hero-bg" src="/assets/images/blue-coast.webp" srcset="/assets/images/blue-coast-900.webp 900w, /assets/images/blue-coast.webp 1666w" sizes="100vw" alt="Deep blue ocean and white surf along an Australian coastal headland" fetchpriority="high" decoding="async">
+  <img class="hero-bg" src="/assets/images/wollumbin-dam.webp" srcset="/assets/images/wollumbin-dam-900.webp 900w, /assets/images/wollumbin-dam.webp 1521w" sizes="100vw" alt="Wollumbin / Mt Warning reflected in Clarrie Hall Dam, near Murwillumbah" fetchpriority="high" decoding="async">
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
@@ -98,13 +98,13 @@ ${ticker(ctx)}
       ${arrowLink('/contact/', 'Discuss your court location')}
     </div>
     <figure class="locations-figure">
-      ${picture('blue-road', 'An illustrative coastal road winding beside the blue ocean')}
-      <figcaption class="caps">${icon('compass')}Northern Rivers NSW &amp; South East Queensland</figcaption>
+      ${picture('wollumbin-pinnacle', 'Wollumbin / Mt Warning and the Tweed Valley from the Pinnacle Lookout')}
+      <figcaption class="caps">${icon('compass')}Wollumbin and the Tweed Valley, from the Pinnacle Lookout</figcaption>
     </figure>
   </div>
 </section>
 <section class="statement" data-parallax>
-  <img class="statement-bg" src="/assets/images/blue-court.webp" alt="" loading="lazy" decoding="async">
+  <img class="statement-bg" src="/assets/images/wollumbin-dusk.webp" alt="" loading="lazy" decoding="async">
   <div class="statement-shade" aria-hidden="true"></div>
   <div class="container statement-inner">
     ${eyebrow('What we believe', 'eyebrow-light')}
@@ -353,8 +353,8 @@ ${credentials(ctx)}
 <section class="section section-soft">
   <div class="container locations locations-rev">
     <figure class="locations-figure">
-      ${picture('blue-room', 'An illustrative consultation room with blue chairs and a notebook')}
-      <figcaption class="caps">Space for a clear conversation · Illustrative setting</figcaption>
+      ${picture('tallebudgera', 'Looking across Tallebudgera Creek in Queensland towards Wollumbin in NSW')}
+      <figcaption class="caps">Tallebudgera Creek, Queensland, looking to Wollumbin, NSW</figcaption>
     </figure>
     <div class="locations-copy">
       ${eyebrow('Local knowledge. Wider reach.')}
@@ -630,7 +630,8 @@ export function legal(ctx) {
 <p>The content of this website is general service information, not legal advice. It cannot assess your circumstances or determine the outcome of a matter. Seek advice about your own situation.</p>
 <p>Using this website or sending an enquiry does not establish a lawyer–client relationship. The firm must confirm an engagement, availability and proposed costs separately. No outcome is promised.</p>
 <h2>About this website.</h2>
-<p>Landscape, courthouse and consultation imagery is illustrative and does not depict the firm’s actual premises or a specific court or location.</p>
+<p>The interior photograph is illustrative and does not depict the firm’s premises. Landscape photographs of Wollumbin and the Tweed Valley are used under Creative Commons licences:</p>
+<ul class="credits">${site.photoCredits.map((c) => `<li><a href="${c.source}" target="_blank" rel="noopener">${esc(c.what)}</a> by ${esc(c.author)}, <a href="${c.licenseUrl}" target="_blank" rel="noopener">${esc(c.license)}</a>. Cropped and resized.</li>`).join('')}</ul>
 <p>Doyle’s Guide recognition relates to Adam Ashley’s recommended listing in Regional NSW criminal lawyer rankings for 2023–2026. <a href="${site.doylesUrl}" target="_blank" rel="noopener">View the independent record</a>.</p>
 <p>Liability limited by a scheme approved under Professional Standards Legislation.</p>`
   });
