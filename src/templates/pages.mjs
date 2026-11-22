@@ -21,7 +21,7 @@ export function home(ctx) {
     bodyClass: 'page-home',
     body: `
 <section class="hero">
-  <img class="hero-bg" src="/assets/images/wollumbin-dam.webp" srcset="/assets/images/wollumbin-dam-900.webp 900w, /assets/images/wollumbin-dam.webp 1521w" sizes="100vw" alt="Wollumbin / Mt Warning reflected in Clarrie Hall Dam, near Murwillumbah" fetchpriority="high" decoding="async">
+  <img class="hero-bg" src="/assets/images/wollumbin-valley.webp" srcset="/assets/images/wollumbin-valley-900.webp 900w, /assets/images/wollumbin-valley.webp 1623w" sizes="100vw" alt="Wollumbin / Mt Warning above the green hills of the Tweed Valley" fetchpriority="high" decoding="async">
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
@@ -55,7 +55,7 @@ ${credentials(ctx)}
       </div>
       <div class="section-aside">
         <p>Whatever you’re facing, understanding your situation is the first step. Find the support that’s right for your matter.</p>
-        ${arrowLink('/expertise/', `All ${areas.length} practice areas`)}
+        ${arrowLink('/expertise/', `View all ${areas.length} practice areas`, { cls: 'link-arrow link-arrow-strong' })}
       </div>
     </div>
     <div class="area-grid">${featured.map((a, i) => areaCard(a, num(i))).join('')}</div>
