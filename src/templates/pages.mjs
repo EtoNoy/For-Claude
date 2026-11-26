@@ -25,17 +25,17 @@ export function home(ctx) {
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <div class="rise" style="--d:0">${eyebrow('Criminal defence. Human first.', 'eyebrow-light')}</div>
-      <h1 class="display"><span class="rise" style="--d:1">Your future.</span><em class="rise" style="--d:2">Worth defending.</em></h1>
-      <p class="hero-lead rise" style="--d:3">When everything feels uncertain,<br>who stands beside you matters.</p>
+      <div class="rise" style="--d:0">${eyebrow('Criminal defence, Northern Rivers', 'eyebrow-light')}</div>
+      <h1 class="display"><span class="rise" style="--d:1">Facing a charge?</span><em class="rise" style="--d:2">Talk to Adam early.</em></h1>
+      <p class="hero-lead rise" style="--d:3">Being charged is stressful. Adam will explain what happens next, in plain English.</p>
       <div class="btn-row rise" style="--d:4">
         ${btn('/contact/', 'Speak with Adam')}
         ${arrowLink('/expertise/', 'Explore our expertise', { cls: 'link-arrow link-light' })}
       </div>
-      <p class="hero-note rise" style="--d:5">${icon('shield')}Clear advice. Personal commitment. Every step.</p>
+      <p class="hero-note rise" style="--d:5">${icon('shield')}Adam handles your matter himself.</p>
     </div>
     <a class="hero-proof rise" style="--d:6" href="${site.doylesUrl}" target="_blank" rel="noopener" aria-label="Doyle’s Guide recommended 2023 to 2026, opens the Doyle’s Guide listing">
-      <p class="hero-proof-quote">A clear voice.<br><em>A strong defence.</em></p>
+      <p class="hero-proof-quote">Recommended<br><em>in Doyle’s Guide</em></p>
       ${doylesBadges('badges-row')}
       <span class="caps">Doyle’s Guide · 2023–2026</span>
     </a>
@@ -51,10 +51,10 @@ ${credentials(ctx)}
     <div class="section-head split-head">
       <div>
         ${eyebrow('Our expertise')}
-        <h2 class="h2">${twoLine(['Focused expertise.', 'Personal commitment.'])}</h2>
+        <h2 class="h2">${twoLine(['What we handle.', 'Find your matter.'])}</h2>
       </div>
       <div class="section-aside">
-        <p>Whatever you’re facing, understanding your situation is the first step. Find the support that’s right for your matter.</p>
+        <p>Find the area that matches what you’re dealing with. Each page explains the process and what to bring.</p>
         ${arrowLink('/expertise/', `View all ${areas.length} practice areas`, { cls: 'link-arrow link-arrow-strong' })}
       </div>
     </div>
@@ -72,10 +72,10 @@ ${credentials(ctx)}
       </div>
     </figure>
     <div class="profile-copy">
-      ${eyebrow('The person in your corner')}
-      <h2 class="h2">${twoLine(['A strong advocate.', 'A human approach.'])}</h2>
-      <p class="lead">Your matter is personal.<br>Your representation should be, too.</p>
-      <p>Adam Ashley brings clear thinking, careful preparation and a direct, personal approach to criminal defence. He listens, explains your options and stays involved from the first conversation to the courtroom.</p>
+      ${eyebrow('Your lawyer')}
+      <h2 class="h2">${twoLine(['Adam does the work.', 'Not a junior.'])}</h2>
+      <p class="lead">You’ll deal with the lawyer you meet.</p>
+      <p>Adam Ashley is a criminal defence lawyer based in Murwillumbah. He listens, explains your options in plain language and stays with your matter from the first call to court.</p>
       <ul class="ticks">
         <li>${icon('check')}Direct access to your principal lawyer</li>
         <li>${icon('check')}Admitted to the Supreme Courts of NSW and Queensland</li>
@@ -91,9 +91,9 @@ ${ticker(ctx)}
 <section class="section">
   <div class="container locations">
     <div class="locations-copy">
-      ${eyebrow('Grounded here. Standing with you.')}
-      <h2 class="h2">${twoLine(['Local knowledge.', 'Across two states.'])}</h2>
-      <p>From our base in Murwillumbah, we represent clients in courts across Northern Rivers NSW and South East Queensland.</p>
+      ${eyebrow('Where we work')}
+      <h2 class="h2">${twoLine(['Northern Rivers', 'and South East Queensland.'])}</h2>
+      <p>We appear in local and regional courts across both states, from our base in Murwillumbah.</p>
       ${locationTabs(ctx)}
       ${arrowLink('/contact/', 'Discuss your court location')}
     </div>
@@ -108,16 +108,16 @@ ${ticker(ctx)}
   <div class="statement-shade" aria-hidden="true"></div>
   <div class="container statement-inner">
     ${eyebrow('What we believe', 'eyebrow-light')}
-    <p class="statement-text">Everyone accused of a crime<br><em>deserves a strong defence.</em></p>
-    <p class="statement-sub">Adam looks closely at the evidence, tests police procedure and prepares every matter carefully, from the first conversation to the courtroom.</p>
+    <p class="statement-text">Everyone charged with an offence<br><em>deserves a proper defence.</em></p>
+    <p class="statement-sub">Adam reads the evidence closely, checks how police handled the matter and prepares it properly, from the first call to court.</p>
   </div>
 </section>
 <section class="section section-soft">
   <div class="container faq-split">
     <div>
-      ${eyebrow('A little more clarity')}
-      <h2 class="h2">${twoLine(['Questions are', 'a good place to start.'])}</h2>
-      <p>Get to know what working with Frontline looks like, from the first call to your next step.</p>
+      ${eyebrow('Common questions')}
+      <h2 class="h2">${twoLine(['Questions people', 'ask us.'])}</h2>
+      <p>Answers about calls, costs and what happens next.</p>
       ${arrowLink('/questions/', 'Explore your questions')}
     </div>
     ${accordion(homeFaqs)}
@@ -158,8 +158,8 @@ export function expertise(ctx) {
     ${breadcrumb([['Home', '/'], ['Our expertise', '']])}
     ${eyebrow('Our expertise')}
     <div class="page-hero-split">
-      <h1 class="display display-dark">${twoLine(['One focus.', 'Your defence.'])}</h1>
-      <p class="page-hero-aside">Criminal defence is what we do. Explore the firm’s ${areas.length} practice areas and find a clear starting point for your matter.</p>
+      <h1 class="display display-dark">${twoLine(['Criminal defence.', 'Only.'])}</h1>
+      <p class="page-hero-aside">We only do criminal law. Browse our ${areas.length} areas and pick the one that fits your matter.</p>
     </div>
     <div class="filter-bar" data-filter-group="areas">
       <div class="filters" role="group" aria-label="Filter practice areas">
@@ -226,7 +226,7 @@ export function area(ctx, a) {
   <div class="container area-body">
     <div class="area-main">
       <article id="overview" class="area-overview">
-        ${eyebrow('Your situation, understood', 'eyebrow-lg')}
+        ${eyebrow('What this means for you', 'eyebrow-lg')}
         <h2 class="h2">${twoLine(a.overviewTitle, false)}</h2>
         <p class="lead">${esc(a.overview[0])}</p>
         <p>${esc(a.overview[1])}</p>
@@ -312,8 +312,8 @@ export function about(ctx) {
     <div class="about-hero">
       <div>
         ${eyebrow('Meet Adam Ashley')}
-        <h1 class="display display-dark display-md">${twoLine(['Strong in your defence.', 'Personal in his approach.'])}</h1>
-        <p class="lead-lg">A direct line to the person who’s in your corner.</p>
+        <h1 class="display display-dark display-md">${twoLine(['Criminal defence,', 'done personally.'])}</h1>
+        <p class="lead-lg">The person you speak with is the person doing the work.</p>
         <p>Adam Ashley is Frontline Lawyers’ Principal Criminal Defence Lawyer. Based in Murwillumbah, he represents clients across Northern Rivers NSW and South East Queensland.</p>
         <div class="btn-row">${btn('/contact/', 'Speak with Adam')}</div>
         <p class="hero-note dark">${icon('shield-check')}${esc(site.admission)}</p>
@@ -329,11 +329,11 @@ ${credentials(ctx)}
 <section class="section">
   <div class="container split-cols">
     <div>
-      ${eyebrow('The Frontline difference')}
-      <h2 class="h2">${esc('Your circumstances.')}<br>${esc('Your concerns.')}<br><em>Your lawyer.</em></h2>
+      ${eyebrow('How we work')}
+      <h2 class="h2">${esc('Straight answers.')}<br><em>From Adam.</em></h2>
     </div>
     <div class="prose">
-      <p class="lead">You deserve a lawyer who listens carefully, explains things clearly and remains personally involved.</p>
+      <p class="lead">You should be able to ask your lawyer anything and get a straight answer.</p>
       <p>Adam’s practice centres on criminal defence. He handles your matter personally and takes the time to understand what matters to you, with clear communication as the proposed strategy develops.</p>
       <p>Admitted in NSW and Queensland, Adam works with experienced criminal defence barristers—including senior counsel—where the proceedings call for it.</p>
       <p>He is recommended in Doyle’s Guide’s Regional NSW criminal lawyer rankings for 2023, 2024, 2025 and 2026.</p>
@@ -357,9 +357,9 @@ ${credentials(ctx)}
       <figcaption class="caps">Tallebudgera Creek, Queensland, looking to Wollumbin, NSW</figcaption>
     </figure>
     <div class="locations-copy">
-      ${eyebrow('Local knowledge. Wider reach.')}
-      <h2 class="h2">${twoLine(['Grounded in the region.', 'Across two states.'])}</h2>
-      <p>Frontline represents clients throughout Northern Rivers NSW and South East Queensland. Confirm your particular court and the firm’s availability with Adam.</p>
+      ${eyebrow('Where we work')}
+      <h2 class="h2">${twoLine(['Based in Murwillumbah.', 'Working in both states.'])}</h2>
+      <p>We act for clients across Northern Rivers NSW and South East Queensland. Check with Adam that he can cover your court.</p>
       ${locationTabs(ctx)}
     </div>
   </div>
@@ -396,8 +396,8 @@ export function approach(ctx) {
     <div class="area-hero-grid">
       <div>
         ${eyebrow('How we work')}
-        <h1 class="display display-dark display-md">${twoLine(['Clarity from the start.', 'Commitment throughout.'])}</h1>
-        <p class="hero-lead dark">A personal approach to a serious situation. Understand what working with Frontline can look like, from your first conversation to your next stage.</p>
+        <h1 class="display display-dark display-md">${twoLine(['How it works.', 'Start to finish.'])}</h1>
+        <p class="hero-lead dark">A straightforward process, from your first call to the next step.</p>
         <div class="btn-row">${btn('/contact/', 'Start a conversation')}</div>
       </div>
       <figure class="area-figure">
@@ -412,7 +412,7 @@ ${approachBand({ head: ['A clear path forward', ['You don’t need all the answe
   <div class="container split-cols">
     <div>
       ${eyebrow('What you can expect')}
-      <h2 class="h2">${twoLine(['Personal attention.', 'Practical clarity.'])}</h2>
+      <h2 class="h2">${esc('What to expect.')}</h2>
     </div>
     <ol class="expect">${expect.map(([t, p], i) => `<li><span class="expect-num">${num(i)}</span><div><h3 class="h3">${esc(t)}</h3><p>${esc(p)}</p></div></li>`).join('')}</ol>
   </div>
@@ -421,8 +421,8 @@ ${approachBand({ head: ['A clear path forward', ['You don’t need all the answe
   <div class="container faq-split">
     <div>
       ${eyebrow('Before we speak')}
-      <h2 class="h2">${twoLine(['A few things', 'worth knowing.'])}</h2>
-      <p>Your first enquiry is a starting point. Adam will discuss availability and the arrangements for a conference.</p>
+      <h2 class="h2">${esc('Before you call.')}</h2>
+      <p>Your first message is just a starting point. Adam will talk through availability and how a meeting would work.</p>
     </div>
     ${accordion(faqs)}
   </div>
@@ -450,8 +450,8 @@ export function questions(ctx) {
     ${breadcrumb([['Home', '/'], ['Your questions', '']])}
     ${eyebrow('A little more clarity')}
     <div class="page-hero-split">
-      <h1 class="display display-dark">${twoLine(['A good place', 'to start.'])}</h1>
-      <p class="page-hero-aside">Questions about the first call and working with Adam, plus a plain-English legal guide to police powers, bail, driving, AVOs and the court process.</p>
+      <h1 class="display display-dark">${twoLine(['Common', 'questions.'])}</h1>
+      <p class="page-hero-aside">Answers about the first call and working with Adam, plus a plain-English guide to police powers, bail, driving, AVOs and court.</p>
     </div>
     <div class="filter-bar filter-bar-q" data-filter-group="questions">
       <label class="search">${icon('search')}<span class="sr-only">Search questions</span><input type="search" placeholder="Search ${items.length} questions…" data-search autocomplete="off"></label>
@@ -501,8 +501,8 @@ export function contact(ctx) {
     <div class="contact-pad">
       ${breadcrumb([['Home', '/'], ['Contact', '']])}
       ${eyebrow('Your next step')}
-      <h1 class="display display-dark display-md">${twoLine(['Let’s find', 'your way forward.'])}</h1>
-      <p class="lead-lg">Start with a conversation.<br>Speak directly with Adam about your matter.</p>
+      <h1 class="display display-dark display-md">${esc('Get in touch.')}</h1>
+      <p class="lead-lg">Send a message or call Adam directly.</p>
       <a class="contact-phone" href="${site.phoneHref}">${esc(site.phone)}${icon('arrow-up-right')}</a>
       <a class="contact-email" href="mailto:${site.email}">${esc(site.email)}${icon('arrow-up-right')}</a>
       <p class="contact-row">${icon('map-pin')}<span>${esc(site.postal.join(', '))}<small>Mailing address · conferences by arrangement</small></span></p>
@@ -512,9 +512,9 @@ export function contact(ctx) {
   </div>
   <div class="contact-right">
     <div class="contact-pad">
-      ${eyebrow('A private first step')}
-      <h2 class="h2">${twoLine(['Tell us how', 'we can help.'])}</h2>
-      <p>Send a brief enquiry and Adam will be in touch.</p>
+      ${eyebrow('Send an enquiry')}
+      <h2 class="h2">${twoLine(['Tell us what’s', 'happening.'])}</h2>
+      <p>Keep it brief. Adam will get back to you.</p>
       <form class="enquiry" name="contact" method="POST" action="/contact/thanks/" data-netlify="true" netlify-honeypot="bot-field" data-enquiry>
         <input type="hidden" name="form-name" value="contact">
         <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -554,8 +554,8 @@ export function contact(ctx) {
   <div class="container split-cols">
     <div>
       ${eyebrow('Where we work')}
-      <h2 class="h2">${twoLine(['Across the region.', 'By your side.'])}</h2>
-      <p>Based in Murwillumbah, representing clients across Northern Rivers NSW and South East Queensland.</p>
+      <h2 class="h2">${esc('Where we work.')}</h2>
+      <p>Based in Murwillumbah. We act across Northern Rivers NSW and South East Queensland.</p>
     </div>
     <div>
       ${locationTabs(ctx)}

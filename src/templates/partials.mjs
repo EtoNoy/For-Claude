@@ -47,7 +47,7 @@ export function reviews(ctx) {
     <div class="section-head split-head split-head-end">
       <div>
         ${eyebrow('In their words')}
-        <h2 class="h2">Clear advice.<br><em>Kept in the loop.</em></h2>
+        <h2 class="h2">What clients say.</h2>
       </div>
       <div class="reviews-nav">
         <button type="button" class="round-btn" data-reviews-prev aria-label="Previous review">${icon('arrow-right', 'flip')}</button>
@@ -85,7 +85,7 @@ export function header(ctx) {
         <div class="mega" id="mega-menu" hidden>
           <div class="mega-intro">
             ${eyebrow('Our expertise')}
-            <h2 class="mega-title">${twoLine(['One focus.', 'Your defence.'])}</h2>
+            <h2 class="mega-title">${twoLine(['Criminal defence.', 'Only.'])}</h2>
             ${arrowLink('/expertise/', 'Explore all practice areas')}
           </div>
           <ul class="mega-list">
@@ -121,7 +121,7 @@ export function footer(ctx) {
     <div class="footer-grid">
       <div class="footer-brand">
         ${logo(site, 'logo-light')}
-        <p class="footer-tagline">Clear advice. Strong advocacy.<br><em>Always in your corner.</em></p>
+        <p class="footer-tagline">Criminal defence in Murwillumbah.<br><em>Northern Rivers and South East Queensland.</em></p>
       </div>
       <div class="footer-col">
         <h3>Our expertise</h3>
@@ -162,7 +162,7 @@ export function closingCta(ctx, matter = '') {
   <div class="container cta-inner">
     <div>
       ${eyebrow('Your next step', 'eyebrow-light')}
-      <h2 class="h2">${twoLine(['You don’t have to face it alone.', 'Let’s talk about what comes next.'])}</h2>
+      <h2 class="h2">${twoLine(['Talk to Adam.', 'Start with one call.'])}</h2>
     </div>
     <div class="cta-actions">
       ${btn(href, 'Speak with Adam', 'btn btn-white')}
